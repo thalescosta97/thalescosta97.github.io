@@ -193,7 +193,7 @@ let checkForNullOrNegativeValues = () => {
     showErrorMsg(`Valor da Carga Concentrada não pode ser negativo ou nulo!`);
     return true;
   }
-  if (!tensaoMaxima || tensaoMaxima < 0) {
+  if (!limiteescoamento || limiteescoamento < 0) {
     showErrorMsg(
       `Valor do Limite de Escoamento não pode ser negativo ou nulo!`
     );
