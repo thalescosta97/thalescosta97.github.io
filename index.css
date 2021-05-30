@@ -1,0 +1,41 @@
+input {
+  margin-bottom: 1rem;
+  width: 97%;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.input-output-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .input-output-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.question-img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* CUSTOMS CLASSES */
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.d-none {
+  display: none;
+}

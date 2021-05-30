@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>REMA</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-section">
+            <h1 class="mb-0 mt-0">Engenharia Química - UFG </h1>
+            <h3 class="mb-0 mt-0">REMA - Projeto 1</h3>
+            <h4 class="mb-0 mt-0">Prof.Dr. Arthur Álax de Araújo Albuquerque </h4>
+            <h4 class="mt-0">Grupo: Thales e Letícia</h4>
+        </div>
+
+        <div class="img-wrapper">
+            <img class="question-img" src="./assets/rema_question_picture.png">
+        </div>
+
+        <div class="input-output-section">
+            <div class="input-section">
+                <h3>Entradas:</h3>
+                <label>Carga Distribuída (N/m)</label><input type="number" id="carga-distribuida"
+                    placeholder="Valor da Carga Distribuída">
+
+                <label>Carga Concentrada (N)</label><input type="number" id="carga-concentrada"
+                    placeholder="Valor da Carga Concentrada">
+
+                <label>Limite de Escoamento (MPa)</label><input type="number" id="limite-escoamento"
+                    placeholder="Limite de Escoamento dos arames">
+
+                <label>Módulo de Elasticidade do cabo BC (GPa)</label><input type="number" id="modulo-elasticidade-b-c"
+                    placeholder="Módulo de Elasticidade do cabo BC">
+
+                <label>Módulo de Elasticidade do cabo DE (GPa)</label><input type="number" id="modulo-elasticidade-d-e"
+                    placeholder="Módulo de Elasticidade do cabo DE">
+
+                <label>Distância entre os pontos AC (m)</label><input type="number" id="distancia-a-c"
+                    placeholder="Distância entre os pontos AC">
+
+                <label>Distância entre os pontos CE (m)</label><input type="number" id="distancia-c-e"
+                    placeholder="Distância entre os pontos CE">
+
+                <label>Distância entre os pontos EF (m)</label><input type="number" id="distancia-e-f"
+                    placeholder="Distância entre os pontos EF">
+
+                <label>Comprimento do arame BC (m)</label><input type="number" id="comprimento-b-c"
+                    placeholder="Comprimento do arame BC">
+
+                <label>Comprimento do arame DE (m)</label><input type="number" id="comprimento-d-e"
+                    placeholder="Comprimento do arame DE">
+
+                <label>Diâmetro do cabo BC (m)</label><input type="number" id="diametro-b-c"
+                    placeholder="Diâmetro do cabo BC">
+
+                <label>Diâmetro do cabo DE (m)</label><input type="number" id="diametro-d-e"
+                    placeholder="Diâmetro do cabo DE">
+
+                <label>Fator de Segurança</label><input type="number" id="fator-seguranca"
+                    placeholder="Fator de Segurança">
+
+                <button type="button" onclick="calculate()">Calcular</button>
+                <button type="button" onclick="insertTestValues()">Inserir valores de teste</button>
+            </div>
+
+            <div class="output-section d-none">
+                <h3>Saidas:</h3>
+                <p><b>Reação no ponto A (N): </b><span id="reacao-ponto-a"></span></p>
+                <p><b>Reação no ponto B (N): </b><span id="reacao-ponto-b"></span></p>
+                <p><b>Reação no ponto D (N): </b><span id="reacao-ponto-d"></span></p>
+                <p><b>Deslocamento no ponto A (mm): </b><span id="deslocamento-ponto-a"></span></p>
+                <p><b>Deslocamento no ponto C (mm): </b><span id="deslocamento-ponto-c"></span></p>
+                <p><b>Deslocamento no ponto E (mm): </b><span id="deslocamento-ponto-e"></span></p>
+                <p><b>Deslocamento no ponto F (mm): </b><span id="deslocamento-ponto-f"></span></p>
+                <p><b>Deformação do cabo BC (mm): </b><span id="deformacao-cabo-b-c"></span></p>
+                <p><b>Deformação do cabo DE (mm): </b><span id="deformacao-cabo-d-e"></span></p>
+                <p><b>Tensão no cabo BC (MPa): </b><span id="tensao-cabo-b-c"></span></p>
+                <p><b>Tensão no cabo DE (MPa): </b><span id="tensao-cabo-d-e"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
