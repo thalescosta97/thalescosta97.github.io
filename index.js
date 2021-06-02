@@ -82,7 +82,7 @@ let applyEquations = () => {
 
   let RDDenominador =
     2 *
-    ((areaBC* moduloElasticidadeBC * l2 * Math.pow(l3, 3)) / (areaDE * moduloElasticidadeDE * l1 * (l3 + l4)) + (l3 + l4));
+    ((areaBC* moduloElasticidadeBC * l2 * Math.pow(l3, 2)) / (areaDE * moduloElasticidadeDE * l1 * (l3 + l4)) + (l3 + l4));
 
   RD = RDNumerador / RDDenominador;
 
